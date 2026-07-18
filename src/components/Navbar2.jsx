@@ -1,9 +1,13 @@
 import React from 'react'
 
-const Navbar2 = () => {
+const Navbar2 = (props) => {
   return (
     <div className='nav2'>
-        <h1>Baby </h1>
+        <h4>Home</h4>
+        <h4>About</h4>
+        <h4>Contact</h4>
+        <h4>Services</h4>
+        {props.theme}
     </div>
   )
 }

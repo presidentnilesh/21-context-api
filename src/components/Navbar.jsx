@@ -1,15 +1,11 @@
 import React from 'react'
 import Navbar2 from './Navbar2'
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (<div className='nav'>
-        <Navbar2 />
-    <div className='nav2'>
-        <h4>Home</h4>
-        <h4>About</h4>
-        <h4>Contact</h4>
-        <h4>Services</h4>
-    </div>
+
+        <h1>Baby </h1>
+        <Navbar2 theme={props.theme}/>
   </div>
   )
 }
