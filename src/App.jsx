@@ -7,7 +7,10 @@ const App = () => {
   const [theme, setTheme] = useState('light')
   return (
     <div>
-      <Navbar theme={theme}/>
+      <Navbar theme={theme}>
+        <h2>this is the element in navbar </h2>
+        <h4>This is the second one </h4>
+      </Navbar>
     </div>
   )
 }

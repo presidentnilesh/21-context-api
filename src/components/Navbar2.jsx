@@ -7,7 +7,7 @@ const Navbar2 = (props) => {
         <h4>About</h4>
         <h4>Contact</h4>
         <h4>Services</h4>
-        {props.theme}
+        <h4>{props.theme}</h4>
     </div>
   )
 }
