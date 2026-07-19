@@ -12,15 +12,29 @@ html, body {
     height: 100%;
 }
 
-.nav {
+
+.light{
+  background-color: lightseagreen;
   background-color: lightpink ;
   display: flex;
   justify-content: space-between;
   padding:10px 20px;
   align-items: center;
 }
+.dark{
+  background-color: darkslategrey;
+  background-color: lightpink ;
+  display: flex;
+  justify-content: space-between;
+  padding:10px 20px;
+  align-items: center ;
+}
 .nav2{
   gap: 20px;
   display: flex;
   
+}
+button {
+
+  padding: 10px 20px ;
 }

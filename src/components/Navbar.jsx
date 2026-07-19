@@ -1,15 +1,19 @@
 import React from 'react'
 import Navbar2 from './Navbar2'
+import { themeDataContext } from '../context/ThemeContext'
+import { useContext } from 'react'
 
-const Navbar = ({children , theme}) => {    // we can also pass props in the function or we can write {children} -> for the children and {children , theme} -> for childrena nd theme 
+const Navbar=()=>{ 
     
+  
+  const [theme] = useContext(themeDataContext)
     
-  return (<div className='nav'>
+  return (
+  <div className={theme}>
 
-        <h1>Baby </h1>
-        {(children[0])}
-        {(children[1])}
-        <Navbar2 theme={theme}/>
+      <h1>Ayushi</h1>
+       
+      <Navbar2 />
   </div>
   )
 }
