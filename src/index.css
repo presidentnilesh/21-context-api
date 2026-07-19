@@ -15,15 +15,15 @@ html, body {
 
 .light{
   background-color: lightseagreen;
-  background-color: lightpink ;
   display: flex;
   justify-content: space-between;
   padding:10px 20px;
-  align-items: center;
+  align-items: center ;
+  
 }
 .dark{
   background-color: darkslategrey;
-  background-color: lightpink ;
+
   display: flex;
   justify-content: space-between;
   padding:10px 20px;
@@ -34,7 +34,7 @@ html, body {
   display: flex;
   
 }
-button {
+Button {
 
   padding: 10px 20px ;
 }

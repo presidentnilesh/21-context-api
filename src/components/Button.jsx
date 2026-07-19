@@ -1,22 +1,18 @@
 import React, { useContext } from 'react'
-import { themeDataContext } from '../context/ThemeContext';
-
-
+import { ThemeDataContext } from '../context/ThemeContext'
 
 const Button = () => {
+    const [theme, setTheme] = useContext(ThemeDataContext)
 
-const [theme , setTheme] = useContext(themeDataContext)
-
-    const handelclick = ()=> {
+    const changeTheme = () => {
         setTheme('dark')
-        
     }
-  return (
-    <div >
-        
-        <button className='button' onClick={handelclick}>Change Theme to {theme}</button>
-    </div>
-  )
+
+    return (
+        <div>
+            <button onClick={changeTheme}>Change Theme</button>
+        </div>
+    )
 }
 
 export default Button
